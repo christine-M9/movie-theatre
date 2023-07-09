@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-blend-mode: lighten;
+  }
+  #title {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  #runtime,
+  #showtime,
+  #available-tickets {
+    margin-bottom: 10px;
+  }
+  .sold-out {
+    color: rgb(39, 12, 163);
+  }
+  ul {
+    list-style-type: square;
+    padding: 20;
+    margin: 30;
+    cursor: pointer;
+  }
+  .film-item {
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .film-item:hover {
+    background-color: #4e0505;
+  }
+  #buy-ticket {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #buy-ticket:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  #buy-ticket:hover:not(:disabled) {
+    background-color: #2c81ba;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  h2 {
+    margin-top: 30px;
+  }
+  #movie-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  #poster {
+    position: absolute;
+    margin-bottom: 60px;
+    width: 25%;
+    height: 25%;
+    bottom: 70px;
+  }
